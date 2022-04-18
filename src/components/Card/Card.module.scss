@@ -1,0 +1,61 @@
+/*  scss variables */
+$max799: "(max-width: 799px)";
+
+.card-container {
+    background-color: rgba(12, 154, 154, 0.1);
+    padding-top: 0.5rem;
+    @media #{$max799} {
+        margin: 1.125rem auto;
+    }
+    &__image {
+        background-position: center;
+        background-size: cover;
+        box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        // background: #0c9a9a;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        & > img {
+            height: 100%;
+            max-width: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background: #aecb6e;
+        }
+        &:hover:after {
+            opacity: 0;
+        }
+    }
+    &__data {
+        background: #eee;
+        color: #828282;
+        letter-spacing: 1px;
+        margin-top: -0.25rem;
+        position: relative;
+        text-transform: lowercase;
+        width: 100%;
+        z-index: 1;
+    }
+    &__data:before {
+        color: #444;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-left: 1rem;
+        padding-right: 0.5em;
+    }
+    @media #{$max799} {
+         margin: 3rem auto;
+    }
+
+}
+

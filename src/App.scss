@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background: #8fa339;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+footer {
+  font-size: 1.3rem;
+  letter-spacing: 0.07rem;
+}
