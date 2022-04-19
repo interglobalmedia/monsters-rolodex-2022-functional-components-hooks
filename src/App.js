@@ -4,7 +4,6 @@ import CardList from './components/CardList/CardList'
 import SearchBox from './components/SearchBox/SearchBox'
 
 const App = () => {
-  console.log(`render`)
   const [searchInputField, setSearchInputField] = useState('')
   const [monsters, setMonsters] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -56,7 +55,6 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    console.log(`effect fired`)
     fetchMonstersHandler()
   }, [fetchMonstersHandler])
 
