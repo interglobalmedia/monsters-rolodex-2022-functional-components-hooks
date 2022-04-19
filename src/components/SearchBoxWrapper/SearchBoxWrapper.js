@@ -1,11 +1,12 @@
 import classes from './SearchBoxWrapper.module.scss'
 
-const SearchBoxWrapper = ({ searchBoxWrapper }) => (
+const SearchBoxWrapper = ({ className, children }) => (
     
-    <fieldset className={`${classes.fieldset} ${searchBoxWrapper.className}`}>
-        {searchBoxWrapper.children}
+    <fieldset className={`${classes.fieldset} ${className}`}>
+        {children}
     </fieldset>
 )
+
 
 
 export default SearchBoxWrapper
