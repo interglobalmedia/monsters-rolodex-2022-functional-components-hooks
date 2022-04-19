@@ -1,11 +1,11 @@
 import SearchBoxWrapper from '../SearchBoxWrapper/SearchBoxWrapper'
 import classes from './SearchBox.module.scss'
 
-const SearchBox = ({searchBox}) => (
-    
+const SearchBox = ({className, placeholder, onChange, autofocus}) => (
+
     <SearchBoxWrapper className="monsters-fieldset">
         <h2>Search The Monsters!</h2>
-        <input className={`${classes["search-box"]} ${searchBox.className}`} type="search" placeholder={searchBox.placeholder} onChange={searchBox.onChange} autoFocus={searchBox.autofocus}/>
+        <input className={`${classes["search-box"]} ${className}`} type="search" placeholder={placeholder} onChange={onChange} autoFocus={autofocus}/>
     </SearchBoxWrapper>
 )
 
