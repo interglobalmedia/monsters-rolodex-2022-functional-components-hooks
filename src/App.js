@@ -41,8 +41,6 @@ const App = () => {
         })
       }
 
-      console.log(loadedMonsters)
-
       if (!response.ok) {
         throw new Error(`Something went wrong!`)
       }
