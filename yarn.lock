@@ -7890,6 +7890,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.throttle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.throttle@npm:4.1.1"
+  checksum: 129c0a28cee48b348aef146f638ef8a8b197944d4e9ec26c1890c19d9bf5a5690fe11b655c77a4551268819b32d27f4206343e30c78961f60b561b8608c8c805
+  languageName: node
+  linkType: hard
+
 "lodash.uniq@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
@@ -8250,6 +8257,7 @@ __metadata:
     gh-pages: ^3.2.3
     react: ^18.0.0
     react-dom: ^18.0.0
+    react-lazy-load-image-component: ^1.5.4
     react-scripts: 5.0.1
     sass: ^1.50.0
     web-vitals: ^2.1.0
@@ -9984,6 +9992,19 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-lazy-load-image-component@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "react-lazy-load-image-component@npm:1.5.4"
+  dependencies:
+    lodash.debounce: ^4.0.8
+    lodash.throttle: ^4.1.1
+  peerDependencies:
+    react: ^15.x.x || ^16.x.x || ^17.x.x || ^18.x.x
+    react-dom: ^15.x.x || ^16.x.x || ^17.x.x || ^18.x.x
+  checksum: b9edf5f28985ab8960917cf0d2fc195b2294d9e151bc1bf7599c94fa40ecd6385adbd0cac7144e9517e3d5b0de9c525cec22cdcc99af61ea2be5bda3ce9a9004
   languageName: node
   linkType: hard
 
